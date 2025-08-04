@@ -1,0 +1,275 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #b2d3ef;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #ffffff;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+  position: relative;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #1e90ff;
+}
+
+h2 {
+  font-weight: normal;
+  margin-top: -10px;
+  margin-bottom: 40px;
+}
+
+.texto {
+  background-color: #7daef4d0;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  line-height: 1.8;
+  font-size: 1.1rem;
+  text-align: justify;
+}
+
+.texto p {
+  margin-bottom: 50px;
+}
+
+.texto .amor {
+  color: red;
+  font-weight: bold;
+}
+
+.foto-canto {
+  position: absolute;
+  width: 75px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 0 10px #aaa;
+}
+
+.foto-top-left {
+  top: 20px;
+  left: 20px;
+}
+
+.foto-bottom-right {
+  bottom: 20px;
+  right: 20px;
+}
+
+.foto-bottom-left {
+  bottom: 20px;
+  left: 20px;
+}
+
+.foto-entre-paragrafos {
+  display: block;
+  margin: 20px auto 40px;
+  width: 60%;
+  max-width: 150px;
+  border-radius: 12px;
+  box-shadow: 0 0 8px #bbb;
+}
+
+@media (max-width: 600px) {
+  .foto-canto {
+    display: none;
+  }
+}
+.botao-proximo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #1e90ff;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease;
+}
+
+.botao-proximo:hover {
+  background-color: #1570c0;
+}
+
+/* Estilo da lista de Geo */
+#pagina-lista .titulo-pagina {
+  text-align: center;
+  color: #1e90ff;
+  margin-top: 30px;
+}
+
+#pagina-lista .subtitulo-pagina {
+  text-align: center;
+  color: #407fbc;
+  margin-bottom: 30px;
+  font-weight: normal;
+}
+
+.lista-geo {
+  background-color: #7daef4d0;
+  padding: 30px 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  list-style: none;
+  font-size: 1.1rem;
+  color: #fff;
+  line-height: 2;
+}
+
+.lista-geo li {
+  background-color: #ffffff30;
+  margin: 10px 0;
+  padding: 10px 15px;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.lista-geo li:hover {
+  transform: scale(1.02);
+}
+
+/* Botão de voltar */
+.botao-voltar {
+  display: inline-block;
+  margin-top: 40px;
+  background-color: #1e90ff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.botao-voltar:hover {
+  background-color: #1570c0;
+}
+.botao-proximo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #1e90ff;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease;
+}
+
+.botao-proximo:hover {
+  background-color: #1570c0;
+}
+
+/* playlist */
+
+body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right, #b2d3ef, #90b8e0);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #ffffff;
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+      position: relative;
+    }
+
+    #pagina-playlist .titulo-pagina {
+      text-align: center;
+      color: #1e90ff;
+      margin-top: 30px;
+      font-size: 2.2rem;
+    }
+
+    #pagina-playlist .subtitulo-pagina {
+      text-align: center;
+      color: #407fbc;
+      margin-bottom: 30px;
+      font-weight: normal;
+      font-size: 1.2rem;
+    }
+
+    .playlist {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .musica {
+      background: linear-gradient(135deg, #7daef4d0, #b2d3ef80);
+      border: 2px solid #ffffff30;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+    }
+
+    .musica:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 25px rgba(30, 144, 255, 0.3);
+    }
+
+    .musica h3 {
+      margin-top: 0;
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .musica::before {
+      content: "\266B";
+      font-size: 1.5rem;
+      color: #fff;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      opacity: 0.2;
+    }
+
+    .musica a {
+      display: inline-block;
+      margin-top: 10px;
+      text-decoration: none;
+      color: #ffffff;
+      background-color: #1e90ff;
+      padding: 6px 12px;
+      border-radius: 20px;
+      transition: background-color 0.3s;
+    }
+
+    .musica a:hover {
+      background-color: #1570c0;
+    }
+
+    .botao-voltar {
+      display: inline-block;
+      margin-top: 40px;
+      background-color: #1e90ff;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .botao-voltar:hover {
+      background-color: #1570c0;
+    }
