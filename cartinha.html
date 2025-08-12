@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cartinha Especial 💌</title>
+<style>
+    /* Fundo gradiente animado */
+    body {
+        margin: 0;
+        height: 100vh;
+        background: linear-gradient(-45deg, #a2d2ff, #bfedfe, #a2d2ff, #6ebdf1);
+        background-size: 400% 400%;
+        animation: gradient 10s ease infinite;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, sans-serif;
+        color: white;
+        overflow: hidden;
+    }
+    @keyframes gradient {
+        0% {background-position: 0% 50%;}
+        50% {background-position: 100% 50%;}
+        100% {background-position: 0% 50%;}
+    }
+
+    /* Título com efeito */
+    h1 {
+        text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+        font-size: 2em;
+        margin-bottom: 20px;
+        color: #1e90ff;
+        background-color: #54d1fe;
+        background: fixed;
+    }
+
+    /* Container das imagens */
+    .container {
+        position: relative;
+        width: 500px;
+        height: 500px;
+        cursor: pointer;
+    }
+
+    /* Todas as imagens ocupam o mesmo espaço */
+    .container img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        transition: opacity 0.5s ease, transform 0.3s ease;
+    }
+
+    /* Esconde inicialmente carta aberta e flor */
+    .aberta, .flor {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    /* Botão voltar */
+    .voltar {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        background: #4361ee;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 10px;
+        text-decoration: none;
+        transition: background 0.3s ease;
+    }
+    .voltar:hover {
+        background: #4895ef;
+    }
+</style>
+</head>
+<body>
+
+<h1>Clique Na Cartinha</h1>
+
+<div class="container" onclick="abrirCarta()">
+    <img src="https://i.postimg.cc/XYjLSpN7/1000149579-removebg-preview.png" alt="Carta Fechada" class="fechada">
+    <img src="https://i.postimg.cc/Hs4zhQgh/1000149580-removebg-preview.png" alt="Carta Aberta" class="aberta">
+    <img src="https://i.postimg.cc/x16R0nqG/1000149578-removebg-preview.png" alt="Flor" class="flor">
+</div>
+
+<a href="playlist.html" class="voltar">◀ Voltar</a>
+
+<script>
+    function abrirCarta() {
+        document.querySelector(".fechada").style.opacity = "0";
+        document.querySelector(".aberta").style.opacity = "1";
+        setTimeout(() => {
+            document.querySelector(".flor").style.opacity = "1";
+            document.querySelector(".flor").style.transform = "scale(1.2)";
+        }, 500);
+    }
+</script>
+
+</body>
+</html>
